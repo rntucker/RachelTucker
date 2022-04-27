@@ -5,7 +5,9 @@ date: "4/27/2022"
 output: pdf_document
 ---
 
-1. This is our first problem
+
+1. Problem 1
+
 ```{r}
 library(nycflights13)
 flights <- flights
@@ -13,9 +15,10 @@ flights <- flights
 flights %>% filter(arr_delay >= 3*60) 
 
 
+
 ```
 
-2. This is our second problem
+2. Problem 2
 
 ```{r}
 flights %>% filter(dest %in% c("IAH", "HOU")) %>% head() #or
@@ -25,3 +28,15 @@ flights %>% filter(dest == "IAH" | dest == "HOU") %>% head()
 
 
 ```
+
+
+
+
+1. Problem 3
+
+```{r}
+airlines <- nycflights13::airlines
+flights %>% filter(carrier %in% c("UA", "AA", "WN")) %>% head()
+
+```
+
