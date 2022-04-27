@@ -6,8 +6,11 @@ output: pdf_document
 ---
 
 
-1. Problem 1
 
+
+
+
+1. Problem 1
 ```{r}
 library(nycflights13)
 flights <- flights
@@ -30,6 +33,17 @@ flights %>% filter(dest == "IAH" | dest == "HOU") %>% head()
 ```
 
 
+
+
+1. Problem 3
+
+```{r}
+airlines <- nycflights13::airlines
+flights %>% filter(carrier %in% c("UA", "AA", "WN")) %>% head()
+
+```
+
+```
 
 
 1. Problem 3
